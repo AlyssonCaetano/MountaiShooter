@@ -1,6 +1,6 @@
 Projeto de Jogo: MountaiSHooter
 Descrição Geral
-Este projeto é um jogo 2D, estilo [gênero do jogo, ex: 'plataforma', 'navegacão espacial', 'quebra-cabeça'], desenvolvido como parte de um projeto acadêmico na [Nome da sua Universidade/Faculdade]. O principal objetivo é aplicar e aprofundar conhecimentos em programação orientada a objetos (POO) e explorar a utilização de um ambiente virtual (Virtual Environment) para gerenciamento de dependências.
+Este projeto é um jogo 2D,  desenvolvido como parte de um projeto acadêmico . O principal objetivo é aplicar e aprofundar conhecimentos em programação orientada a objetos (POO) e explorar a utilização de um ambiente virtual (Virtual Environment) para gerenciamento de dependências.
 
 Tecnologias e Ferramentas
 Linguagem de Programação: Python
