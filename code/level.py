@@ -6,7 +6,6 @@ from tkinter.constants import SEL_FIRST
 
 import pygame
 from pygame import Surface, Rect
-from pygame.examples.go_over_there import clock
 from pygame.font import Font
 
 from code.Const import WIN_HEIGHT, COLOR_WHITE
@@ -21,6 +20,7 @@ class Level:
         self.game_mode = game_mode
         self.entity_list: list[Entity] = []
         self.entity_list.extend(EntityFactory.get_entity('Level1Bg'))
+        self.entity_list.append(EntityFactory.get_entity('Player1'))
         self.timeout = 2000 # 20 seconds
 
 
@@ -40,12 +40,13 @@ class Level:
                     pygame.quit()
                     sys.exit()
 
-            #PRINT text, FPS, tempo e quantidade de entidades
+            # PRINT text, FPS, tempo e quantidade de entidades
             self.level_text(14, f'{self.name} - Timeout: {self.timeout / 1000:.1f}s', COLOR_WHITE, (10, 5))
             self.level_text(14, f'fps: {clock.get_fps():.0f}', COLOR_WHITE, (10, WIN_HEIGHT - 35))
-            self.level_text(14, f'entidades: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
+            self.level_text(14, f'intimidates: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
             pygame.display.flip()
-        pass
+    pass
+
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_pos: tuple):
         text_font: Font = pygame.font.SysFont(name="Lucida Sans Typewriter", size=text_size)
