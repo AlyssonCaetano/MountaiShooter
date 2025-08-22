@@ -55,7 +55,7 @@ class Menu:
                             menu_option = 4
                     # Acept option with ENTER
                     if event.key == pygame.K_RETURN:
-                        return  MENU_OPTION
+                        return  MENU_OPTION[menu_option]
 
 
 

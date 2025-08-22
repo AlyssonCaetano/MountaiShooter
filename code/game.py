@@ -3,7 +3,7 @@
 
 import pygame
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT
+from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
 from code.menu import Menu
 
 
@@ -17,7 +17,16 @@ class Game:
             while True:
                 #chamar tela de menu
                 menu = Menu(self.window)
-                menu.run()
-                pass
+                menu_return = menu.run()
+
+                if menu_return == MENU_OPTION[0]:
+                    pass
+                elif menu_return == MENU_OPTION[4]:
+                    pygame.quit()
+                    quit()
+                else:
+                    pass
+
+
 
 
