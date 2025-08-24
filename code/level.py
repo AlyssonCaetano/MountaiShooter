@@ -11,6 +11,7 @@ from pygame import Surface, Rect
 from pygame.font import Font
 
 from code.Const import WIN_HEIGHT, COLOR_WHITE, MENU_OPTION, EVENT_ENEMY, SPAW_TIME
+from code.EntityMediator import EntityMediator
 from code.entity import Entity
 from code.entityFactory import EntityFactory
 
@@ -57,6 +58,9 @@ class Level:
             self.level_text(14, f'fps: {clock.get_fps():.0f}', COLOR_WHITE, (10, WIN_HEIGHT - 35))
             self.level_text(14, f'intimidates: {len(self.entity_list)}', COLOR_WHITE, (10, WIN_HEIGHT - 20))
             pygame.display.flip()
+            #Verify Collision
+            EntityMediator.verify_collision(entity_list=self.entity_list)
+            EntityMediator.verify_health(entity_list=self.entity_list)
     pass
 
 
