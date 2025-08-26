@@ -19,6 +19,11 @@ ENTITY_SPEED = {
     'Level1Bg4': 4,
     'Level1Bg5': 5,
     'Level1Bg6': 6,
+    'Level2Bg0': 0,
+    'Level2Bg1': 1,
+    'Level2Bg2': 2,
+    'Level2Bg3': 3,
+    'Level2Bg4': 4,
     'Player1': 3,
     'Player1Shot': 3,
     'Player2': 3,
@@ -91,6 +96,11 @@ ENTITY_SCORE = {
     'Level1Bg4': 0,
     'Level1Bg5': 0,
     'Level1Bg6': 0,
+    'Level2Bg0': 0,
+    'Level2Bg1': 0,
+    'Level2Bg2': 0,
+    'Level2Bg3': 0,
+    'Level2Bg4': 0,
     'Player1': 0,
     'Player1Shot': 0,
     'Player2': 0,
@@ -100,6 +110,8 @@ ENTITY_SCORE = {
     'Enemy2': 125,
     'Enemy2Shot': 0,
 }
+
+EVENT_TIMEOUT = pygame.USEREVENT + 2
 
 
 #M
@@ -119,8 +131,11 @@ PLAYER_KEY_SHOOT = {'Player1':pygame.K_RCTRL, 'Player2': pygame.K_LCTRL}
 
 
 #S
-SPAW_TIME = -1
+SPAWN_TIME = 4000
 
+#
+TIMEOUT_STEP = 100
+TIMEOUT_LEVEL = 10000
 
 #W
 WIN_WIDTH = 576
