@@ -131,11 +131,12 @@ PLAYER_KEY_SHOOT = {'Player1':pygame.K_RCTRL, 'Player2': pygame.K_LCTRL}
 
 
 #S
+#Time for spawn enemys
 SPAWN_TIME = 4000
 
 #
 TIMEOUT_STEP = 100
-TIMEOUT_LEVEL = 10000
+TIMEOUT_LEVEL = 20000
 
 #W
 WIN_WIDTH = 576
